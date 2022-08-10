@@ -91,6 +91,12 @@ let trafficLabels = [
   };
   
   const dailyConfig = {
+    aspectRatio: 1.9,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    },
     plugins: {
       legend: {
         display: false,
@@ -127,9 +133,11 @@ let trafficLabels = [
   };
 
   const mobileConfig = {
+    aspectRatio: 1.9,
     plugins: {
       legend: {
         position: 'right',
+        maintainAspectRatio: false,
       },
     },
   };

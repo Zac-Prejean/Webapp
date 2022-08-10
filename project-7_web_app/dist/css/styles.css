@@ -61,8 +61,13 @@ header {
 .icons {
     fill: var(--color-light);
     cursor: pointer;
-    width: 1.6rem; 
 }
+.bell_icon {
+    width: 1.6rem;
+}
+.icons {
+    width: 2.5rem;
+} 
 .bell_icon:hover,
 .icons:hover {
     fill: var(--color-neutral)
@@ -74,9 +79,6 @@ header {
     height: 6px;
     opacity: 1;
 }
-/*.notifyNone {
-  display: none;
-}*/
 .right_banner {
     display: flex;
     justify-content: space-between;
@@ -229,11 +231,6 @@ hr {
     border-radius: 50px;
    
 }
-.LG_widget_con,
-.D_widget_con,
-.M_widget_con {
-    max-width: 400px;
-}
 
 /*--CHARTS--*/
 
@@ -248,7 +245,12 @@ hr {
 .mobile_users {
     grid-area: mobile;
 }
-
+.LG_widget_con, 
+.SM_widget_con,
+.SM_widget_con2 {
+    max-width: 100%;
+    padding: 20px;
+}
 /*--SOCIAL--*/
 
 .social {
@@ -268,7 +270,7 @@ hr {
     display: flex;
     justify-content: center;
     border-radius: 50%; 
-    padding: 10px;
+    padding: 15px;
 }
 .social_text{
     display: flex;
@@ -276,12 +278,12 @@ hr {
     margin-left: 10px;
 }
 .social_p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--color-mid);
     margin: 0px;
 }
 .social_n {
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: var(--color-neutral);
     margin: 0px;
 }
@@ -506,7 +508,6 @@ margin-right: 5px;
 .navBar {
     justify-content: start; 
     flex-direction: column;
-    width: 75px;
     padding: 15px; 
 }
 .navBar svg {
@@ -557,17 +558,12 @@ margin-right: 5px;
 
 /*  TRAFFIC  */
 
-.LG_widget_con {
-    max-width: 75%;
-}
-.D_widget_con {
-    max-width: 600px;
-    max-height: 300px;
-}
 
-.M_widget_con {
-    max-width: 400px;
-    max-height: 400px;
+.LG_widget_con {
+    margin-bottom: 20px;
+}
+.charts {
+    display: flex;
 }
 
  /* SOCIAL */
@@ -587,8 +583,8 @@ margin-right: 5px;
 
 /*--MEMBERS--*/
 
-.members_con,
-.recent_activity{
+.new_members,
+.recent_activity {
     text-align: left;
     display: flex;
     flex-direction: column;
