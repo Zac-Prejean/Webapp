@@ -53,6 +53,7 @@ header {
 }
 .bell_con {
     text-align: -moz-right;
+    padding-right: 5px;
 }
 .bell_icon {
     margin-right: 5px;
@@ -539,7 +540,7 @@ margin-right: 5px;
 .recent_activity,
 .message,
 .settings {
-    padding: 25px;
+    padding: 5px;
 }
 .tab {
     font-size: 1.5em;
@@ -558,9 +559,13 @@ margin-right: 5px;
 
 /*  TRAFFIC  */
 
-
+.LG_widget_con, 
+.SM_widget_con {
+    padding: 0;
+  }
 .LG_widget_con {
     margin-bottom: 20px;
+    max-width: 100%;
 }
 .charts {
     display: flex;
@@ -588,29 +593,26 @@ margin-right: 5px;
     text-align: left;
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
 }
 .member_content_con {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2em;
 }
-.member_img_con {
+.member_img_con,
+.recent_content_con {
     display: flex;
 }
 .member-text {
     padding: 25px;
 }
 .member_img {
-    min-width: 100px;
+    max-width: 100px;
 }
 .member_date_con {
     text-align: right;
     margin: 0px;
     margin-top: 30px;
-}
-.recent_content_con {
-    display: flex;
-    font-size: 1.2em;
 }
 .actBtn {
     display: revert; 
@@ -653,6 +655,13 @@ margin-right: 5px;
 
 .recent_activity {
     border-left: solid 2px var(--color-neutral);
+}
+.new_members,
+.recent_activity {
+    font-size: .8rem;
+}
+.member_img {
+    min-width: 80px;
 }
 
 /*  TRAFFIC  */
